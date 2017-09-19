@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Image Ocean: "{{ post.caption }}"{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8"><h3>Please copy this url: <a href="http://127.0.0.1:8000/p/{{ post.slug }}/">http://127.0.0.1:8000/p/{{ post.slug }}</a>
+        </h3></div>
+        <div class="col-md-2"></div>
+    </div>
+    {% include 'posts/post.html' %}
+{% endblock %}
