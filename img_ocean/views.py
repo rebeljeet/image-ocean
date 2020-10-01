@@ -1,5 +1,4 @@
 from django.views import generic
-
 from posts.models import Post
 from posts.helpers import get_posts
 
